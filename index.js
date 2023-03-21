@@ -5,20 +5,20 @@ marks = Number(marks);
 
 // Check if marks are within the valid range
 if (marks < 0 || marks > 100) {
-  console.log("Invalid marks entered. Please enter a value between 0 and 100.");
+  console.log(window.alert("Invalid marks entered. Please enter a value between 0 and 100."));
 } else {
   // Assign grade based on marks
   let grade;
   if (marks > 79) {
-    grade = 'A';
+    grade =window.alert('Your grade is A');
   } else if (marks >= 60 && marks <= 79) {
-    grade = 'B';
+    grade = window.alert('Your grade is B');
   } else if (marks >= 50 && marks <= 59) {
-    grade = 'C';
+    grade = window.alert('Your grade is C');
   } else if (marks >= 40 && marks <= 49) {
-    grade = 'D';
+    grade = window.alert('Your grade is D');
   } else {
-    grade = 'E';
+    grade = window.alert('Your grade is E');
   }
 
   // Output the grade
